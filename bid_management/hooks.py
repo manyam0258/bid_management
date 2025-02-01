@@ -6,6 +6,10 @@ app_email = "himanshushivhare047@gmail.com"
 app_license = "mit"
 required_apps = ["erpnext"]
 
+import frappe
+from erpnext.stock.doctype.quality_inspection_template import quality_inspection_template
+from bid_management import overrides
+quality_inspection_template.get_template_details = overrides.get_template_details
 
 # Hooks for validating dependencies
 # before_install = "bid_management.hooks.validate_dependencies"
@@ -191,7 +195,7 @@ doc_events = {
 
 override_whitelisted_methods = {
     "erpnext.stock.doctype.quality_inspection_template.quality_inspection_template.get_template_details": 
-    "bid_management.override.custom_get_template_details"
+    "bid_management.overrides.get_template_details"
 }
 
 

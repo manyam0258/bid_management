@@ -1,8 +1,8 @@
 import frappe
-from erpnext.stock.doctype.quality_inspection_template.quality_inspection_template import get_template_details
+#from erpnext.stock.doctype.quality_inspection_template.quality_inspection_template import get_template_details
 
 
-def custom_get_template_details(template):
+def get_template_details(template):
     if not template:
         return []
 
@@ -26,4 +26,4 @@ def custom_get_template_details(template):
     )
 
 # Monkey patching: Override the default method
-get_template_details.__code__ = custom_get_template_details.__code__
+#get_template_details.__code__ = get_template_details.__code__
