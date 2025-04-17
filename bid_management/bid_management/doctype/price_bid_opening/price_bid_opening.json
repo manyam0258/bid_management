@@ -7,8 +7,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "item_category",
   "party",
-  "item",
+  "column_break_qbuw",
   "price",
   "rank",
   "section_break_rrdo",
@@ -18,16 +19,16 @@
  "fields": [
   {
    "fieldname": "party",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Party",
-   "options": "Customer"
+   "label": "Party"
   },
   {
    "fieldname": "price",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Price"
+   "label": "Price",
+   "options": "currency"
   },
   {
    "fieldname": "rank",
@@ -35,13 +36,6 @@
    "in_list_view": 1,
    "label": "Rank",
    "options": "\nL1\nL2\nL3\nL4"
-  },
-  {
-   "fieldname": "item",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Item",
-   "options": "Tender Item"
   },
   {
    "fieldname": "section_break_rrdo",
@@ -57,17 +51,29 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Item Category"
+  },
+  {
+   "fieldname": "column_break_qbuw",
+   "fieldtype": "Column Break"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-12-06 18:53:53.086762",
- "modified_by": "Administrator",
+ "modified": "2025-04-17 12:09:27.253468",
+ "modified_by": "h.shivhare@respoproducts.com",
  "module": "Bid Management",
  "name": "Price Bid Opening",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

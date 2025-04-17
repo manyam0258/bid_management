@@ -60,6 +60,7 @@
   "section_break_vhzy",
   "query",
   "price_bid_tab",
+  "section_break_avul",
   "price_bid_opening",
   "more_info_tab",
   "additional_info_section",
@@ -155,6 +156,7 @@
    "label": "Bid Opening Date"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "tender_validity",
    "fieldtype": "Int",
    "label": "Tender Validity (Days)"
@@ -322,6 +324,7 @@
    "label": "Price Bid"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "price_bid_opening",
    "fieldtype": "Table",
    "label": "Price Bid Opening",
@@ -465,13 +468,19 @@
   {
    "fieldname": "section_break_vhzy",
    "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "section_break_avul",
+   "fieldtype": "Section Break"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-07 14:10:35.691422",
- "modified_by": "Administrator",
+ "modified": "2025-04-17 11:33:03.508620",
+ "modified_by": "h.shivhare@respoproducts.com",
  "module": "Bid Management",
  "name": "Tender",
  "naming_rule": "By \"Naming Series\" field",
@@ -516,6 +525,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [
